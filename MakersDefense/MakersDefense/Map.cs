@@ -8,5 +8,13 @@ namespace MakersDefense
 {
     class Map
     {
+        public readonly int Height;
+        public readonly int Width;
+
+        public Map(int height, int width)
+        {
+            Height = height;
+            Width = width;
+        }
     }
 }

@@ -10,8 +10,10 @@ namespace MakersDefense
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("111");
-            Console.ReadKey();
+            Map map = new Map(8, 5);
+
+            Console.WriteLine(map.Height * map.Width);
+            Console.Read();
         }
     }
 }
