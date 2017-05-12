@@ -16,5 +16,12 @@ namespace MakersDefense
             Height = height;
             Width = width;
         }
+
+        public bool onMap(Point point)
+        {
+            var inBounds = point.X >= 0 && point.X < Width && point.Y >= 0 && point.Y < Height;
+
+            return inBounds;
+        }
     }
 }

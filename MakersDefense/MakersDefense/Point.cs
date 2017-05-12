@@ -16,5 +16,20 @@ namespace MakersDefense
             X = x;
             Y = y;
         }
+
+        public int distanceTo(int x, int y)
+        {
+            int xDiffSquared = (X - x) * (X - x);
+            int yDiffSquared = (Y - y) * (Y - y);
+
+            return (int)Math.Sqrt(xDiffSquared + yDiffSquared);
+        }
+
+        public int distanceTo(Point point)
+        {
+            return distanceTo(point.X, point.Y);
+        }
+
+
     }
 }

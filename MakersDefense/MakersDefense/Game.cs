@@ -12,7 +12,15 @@ namespace MakersDefense
         {
             Map map = new Map(8, 5);
 
-            Console.WriteLine(map.Height * map.Width);
+            Point p = new Point(4, 2);
+            bool isOnMap = map.onMap(p);
+            Console.WriteLine(isOnMap);
+
+            p = new Point(8, 5);
+            isOnMap = map.onMap(p);
+            Console.WriteLine(isOnMap);
+
+            Console.WriteLine(p.distanceTo(5, 2));
             Console.Read();
         }
     }
