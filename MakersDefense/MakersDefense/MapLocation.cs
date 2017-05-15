@@ -8,9 +8,12 @@ namespace MakersDefense
 {
     class MapLocation : Point
     {
-        public MapLocation(int x, int y) : base(x, y)
+        public MapLocation(int x, int y, Map map) : base(x, y)
         {
-
+            if (!map.onMap(this))
+            {
+                throw new OutOfBoundsException(x +","+y+" outside the range");
+            }
         }
     }
 }
