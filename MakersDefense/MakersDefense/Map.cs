@@ -11,7 +11,7 @@ namespace MakersDefense
         public readonly int Height;
         public readonly int Width;
 
-        public Map(int height, int width)
+        public Map(int width, int height)
         {
             Height = height;
             Width = width;
