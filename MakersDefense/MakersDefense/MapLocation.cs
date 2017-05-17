@@ -15,5 +15,10 @@ namespace MakersDefense
                 throw new OutOfBoundsException(x +","+y+" outside the range");
             }
         }
+
+        public bool InRangeOf(MapLocation location, int range)
+        {
+            return distanceTo(location) <= range;
+        }
     }
 }
