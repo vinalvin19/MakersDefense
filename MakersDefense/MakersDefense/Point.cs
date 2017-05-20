@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MakersDefense
 {
-    class Point
+    public class Point
     {
         public readonly int X;
         public readonly int Y;

@@ -37,7 +37,8 @@ namespace MakersDefense
             _pathStep += 1;
         }
 
-        public void decreaseHealth(int factor)
+        //public void decreaseHealth(int factor)
+        public virtual void decreaseHealth(int factor)
         {
             Health -= factor;
         }
